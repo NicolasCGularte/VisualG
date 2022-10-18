@@ -1,0 +1,47 @@
+algoritmo "semnome"
+  //Vamos lá então a um novo exercício! Como de costume já dividindo o problema para facilitar a resolução.
+
+//Parte 1
+//Escrever um algoritmo e um programa para efetuar o cálculo da quantidade de litros de combustível gastos em uma viagem,
+//utilizando-se um automóvel que faz 12 km por litro.
+
+//Parte 2
+//Para obter o cálculo, o usuário deverá fornecer o tempo gasto na viagem e a velocidade média durante a mesma.
+
+//Parte 3
+//Desta forma, será possível obter a distância percorrida com a fórmula DISTÂNCIA = TEMPO * VELOCIDADE.
+
+//Parte 4
+//Tendo o valor da distância, basta calcular a quantidade de litros de combustível utilizada na viagem com a fórmula: LITROS_USADOS = DISTÂNCIA / 12.
+
+//Parte 5
+//O programa deverá apresentar a distância percorrida e a quantidade de litros de combustível utilizados na viagem.
+var
+
+    distancia,volume,consumo: real
+
+
+inicio
+
+  Escreva("Distancia percorrida eh de (km): ")
+   Leia(distancia)
+
+   Escreva("Volume gasto de combustivel (l): ")
+   Leia(volume)
+
+   consumo <- distancia/volume
+
+   Escreva("Seu consumo medio eh de: ")
+   EscrevaL(consumo, " km/l")
+
+   Se (volume < 0) entao
+      EscrevaL("Seu carro eh uma bicicleta!")
+   Senao
+      EscrevaL("Seu carro nao eh uma bicicleta!")
+   Fimse
+
+   Escreva("Obrigado por usar nossos servicos!")
+
+
+
+fimalgoritmo
